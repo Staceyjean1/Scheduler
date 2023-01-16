@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import InterviewerListItem from './components/InterviewerListItem';
+// import InterviewerListItem from "components/InterviewerListItem";
 
 
 import "index.scss";
