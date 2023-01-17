@@ -9,33 +9,14 @@ export default function InterviewerListItem(props) {
   }
 
   
-return (
-  <li className={interviewerClass} onClick={props.setInterviewer}>
-    <img
-      className="interviewers__item-image"
-      src={props.avatar}
-      alt={props.name}
-    />
-    {props.selected && props.name}
-  </li>
-);
+  return (
+    <li className={interviewerClass} onClick={() => props.onClick(props.id)}>
+      <img
+        className="interviewers__item-image"
+        src={props.avatar}
+        alt={props.name}
+      />
+      {props.selected && props.name}
+    </li>
+  );
 }
-
-  // const { id, name, avatar, selected, setInterviewer } = props;
-  // let interviewerClass = "interviewers__item";
-
-  // if (selected) {
-  //   interviewerClass += " interviewers__item--selected";
-  // }
-
-  // return (
-  //   <li className={interviewerClass} onClick={setInterviewer}>
-  //     <img
-  //       className="interviewers__item-image"
-  //       src={props.avatar}
-  //       alt={props.name}
-  //     />
-  //     {props.selected && props.name}
-  //   </li>
-  // )
-  // }

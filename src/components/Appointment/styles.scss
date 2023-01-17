@@ -2,7 +2,6 @@
 @import "styles/mixins.scss";
 @import "styles/animations.scss";
 
-
 $appointment-height: 11rem;
 
 .appointment {
@@ -61,7 +60,6 @@ $appointment-height: 11rem;
       background-color: $dark-background;
       display: flex;
     }
-
     &--show {
       color: rgba($booked-color, $active-opacity);
       background: linear-gradient(
@@ -107,7 +105,6 @@ $appointment-height: 11rem;
   &:last-of-type &__card {
     display: none;
   }
-
   &__actions {
     margin-top: 1rem;
 
@@ -171,3 +168,5 @@ $appointment-height: 11rem;
     margin-bottom: 1rem;
   }
 }
+
+  
